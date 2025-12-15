@@ -1,0 +1,32 @@
+# Action: Readying the code for committing
+
+## When to use
+
+Run at the end of every long run action that is taken. In other words, after a full set of changes have been made or proposed and you would think of it as ready for review/commit.
+
+## What to do (step-by-step)
+
+1. `cd` to the root directory
+3. Run `make lint`
+4. Run `make build`
+
+## Constraints
+
+- If any make steps fail, fix and re-run.
+- Do not install any packages or attempt to run anything as su to fix anything
+
+# Action: make refactors
+
+## When to use
+
+Whenever you're making refactors to modules that involve renaming.
+
+## What to do
+
+When making refactors that deprecate a file/module, do not accomodate for backwards compatibility unless specifically told to do so.
+
+# Adding documentation
+
+## What to do
+
+When adding documentation (as markdown), include it in the docs folder
